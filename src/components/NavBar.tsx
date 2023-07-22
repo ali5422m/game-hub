@@ -6,7 +6,7 @@ const NavBar = () => {
         <>
             <HStack>
                 <Image src={gameLogo} boxSize="60px"  />
-                <Text>NavBar</Text>
+                <Text fontSize="20px" fontWeight="semibold" >GameHub</Text>
             </HStack>
         </>
     );
