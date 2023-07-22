@@ -1,8 +1,8 @@
-import ResponsiveLayout from "./components/ResponsiveLayout.tsx";
+import Layout from "./components/Layout.tsx";
 function App() {
     return (
         <>
-            <ResponsiveLayout />
+            <Layout />
         </>
     )
 }

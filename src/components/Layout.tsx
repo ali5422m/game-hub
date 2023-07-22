@@ -1,6 +1,7 @@
 import {Grid, GridItem, Show} from "@chakra-ui/react";
 import NavBar from "./NavBar.tsx";
-const ResponsiveLayout = () => {
+import GameGrid from "./GameGrid.tsx";
+const Layout = () => {
     return (
         <div>
             <Grid templateAreas={{
@@ -11,16 +12,16 @@ const ResponsiveLayout = () => {
                     <NavBar />
                 </GridItem>
                 <Show above="lg">
-                    <GridItem area="aside" bg="blue">
+                    <GridItem area="aside" >
                         Aside
                     </GridItem>
                 </Show>
-                <GridItem area="main" bg="red">
-                    Main
+                <GridItem area="main" >
+                    <GameGrid />
                 </GridItem>
             </Grid>
         </div>
     );
 };
 
-export default ResponsiveLayout;
+export default Layout;
