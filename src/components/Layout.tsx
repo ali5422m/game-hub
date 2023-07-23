@@ -18,11 +18,11 @@ const Layout = () => {
                     <NavBar />
                 </GridItem>
                 <Show above="lg">
-                    <GridItem area="aside" paddingX={5}>
+                    <GridItem area="aside" paddingX={5} >
                         <GenreList />
                     </GridItem>
                 </Show>
-                <GridItem area="main" >
+                <GridItem area="main" paddingY="5px">
                     <GameGrid />
                 </GridItem>
             </Grid>
