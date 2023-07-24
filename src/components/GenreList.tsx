@@ -17,7 +17,7 @@ const GenreList = ({selectedGenre, onSelectGenre}: Props) => {
 
     return (
         <>
-            <Heading fontSize="2xl" marginBottom={3}>Genre</Heading>
+            <Heading fontSize="2xl" marginBottom={3} marginTop={6}>Genre</Heading>
                 <List>
                     {isLoading &&
                         skeletons.map(skeleton => (
