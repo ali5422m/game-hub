@@ -18,11 +18,6 @@ const GenreList = ({selectedGenre, onSelectGenre}: Props) => {
     return (
         <>
             <Heading fontSize="2xl" marginBottom={3}>Genre</Heading>
-            {/*<SimpleGrid*/}
-            {/*    columns={{sm: 1, md: 2, lg: 3, xl: 4}}*/}
-            {/*    padding="10px"*/}
-            {/*    spacing={3}*/}
-            {/*>*/}
                 <List>
                     {isLoading &&
                         skeletons.map(skeleton => (
@@ -52,7 +47,6 @@ const GenreList = ({selectedGenre, onSelectGenre}: Props) => {
                         </ListItem>
                     ))}
                 </List>
-            {/*</SimpleGrid>*/}
         </>
     );
 };
