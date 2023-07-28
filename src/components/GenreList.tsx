@@ -5,10 +5,10 @@ import GenreSkeleton from "./GenreSkeleton.tsx";
 
 interface Props {
     onSelectGenre: (genre: Genre) => void;
-    selectedGenre: Genre | null;
+    selectedGenreId?: number;
 }
 
-const GenreList = ({selectedGenre, onSelectGenre}: Props) => {
+const GenreList = ({selectedGenreId, onSelectGenre}: Props) => {
     const {data, isLoading, error} = useGenres();
     const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -33,9 +33,9 @@ const GenreList = ({selectedGenre, onSelectGenre}: Props) => {
                                     src={getCroppedImageUrl(genre.image_background)}
                                 />
                                 <Text
-                                    fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
+                                    fontWeight={genre.id === selectedGenreId ? "bold" : "normal"}
                                     fontSize="lg"
-                                    color={genre.id === selectedGenre?.id ? "#48BB78" : ""}
+                                    color={genre.id === selectedGenreId ? "#48BB78" : ""}
                                     variant="link"
                                     cursor="pointer"
                                     _hover={{textDecoration: "underline"}}
