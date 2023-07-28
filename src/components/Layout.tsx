@@ -5,7 +5,7 @@ import GenreList from "./GenreList.tsx";
 import {useState} from "react";
 import {Genre} from "../hooks/useGenres.ts";
 import PlatformSelector from "./PlatformSelector.tsx";
-import {Platform} from "../hooks/useGames.ts";
+import {Platform} from "../hooks/usePlatforms.ts";
 import SortSelector from "./SortSelector.tsx";
 import GameHeading from "./GameHeading.tsx";
 
