@@ -23,7 +23,8 @@ class APIClient<T> {
         return axiosInstance
             .get<FetchResponse<T>>(this.endpoint, config)
             .then(res => res.data);
-    }
+    };
+
 
 
 }
