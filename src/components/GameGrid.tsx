@@ -4,17 +4,17 @@ import GameCard from "./GameCard.tsx";
 import GameCardSkeleton from "./GameCardSkeleton.tsx";
 import GameCardContainer from "./GameCardContainer.tsx";
 
-import {GameQuery} from "./Layout.tsx";
+// import {GameQuery} from "./Layout.tsx";
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 
-interface Props {
-    gameQuery: GameQuery;
-}
+// interface Props {
+//     gameQuery: GameQuery;
+// }
 
 
-const GameGrid = ({gameQuery}: Props) => {
+const GameGrid = () => {
 
     const {
         data,
@@ -23,7 +23,7 @@ const GameGrid = ({gameQuery}: Props) => {
         fetchNextPage,
         // isFetchingNextPage,
         hasNextPage
-    } = useGames(gameQuery);
+    } = useGames();
     const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
     if (error) return <Text>{error.message}</Text>;
